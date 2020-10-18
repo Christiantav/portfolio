@@ -1,21 +1,42 @@
 import React from 'react'
 import '../App.css'
 import PreviewItem from './PreviewItem'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
 
-const previews = [
-    { preview: "Worked as a Software Engineer at Credcap for 1.5 years", path: "/credcap", img: "credcap.png"},
-    { preview: "Worked as the Lead Developer at Project Innovate Newark for 2 years", path: "/pin", img: "pin.png"},
-    { preview: "Worked as a Computer Science Teacher for 2 years", path: "/csx", img: "csx.png"},
+const previewsOne = [
+    { preview: "Credibility Capital", path: "www.credibilitycapital.com", img: "credcap-icon.png", width: '18vw', border: '50%', rounded: true },
+    { preview: "Project Innovate Newark", path: "www.projectinnovatenewark.org", img: "pin-copy.png", width: '18vw', border: '50%', rounded: false },
+    { preview: "The Todo App", path: "/todo", img: "todo.png", width: '18vw', border: '50%', rounded: true },
+]
+
+const previewsTwo = [
+    { preview: "Blogger", path: "/blogger", img: "blogger.png", width: '18vw', border: '50%', rounded: true },
+    { preview: "Project Innovate Newark", path: "/pin", img: "pin-copy.png", width: '18vw', border: '50%', rounded: false },
+    // { preview: "CSX Program Teacher", path: "/csx", img: "csx.png", rounded: true },
+    // { preview: "Todo Application", path: "/todo", img: "todo.png", rounded: true },
 ]
 
 function Landing() {
     return (
         <>
-            <div>Software Development Resume of Christian Tavares</div>
+            <Container>
+                <div className="font" style={{ marginTop: '3em' }}>
+                    Software Development Portfolio of Christian Tavares
+                </div>
 
-            {previews.map(preview =>
-                <PreviewItem {...preview} />
-            )}
+                <Row md={{ span: 3 }}>
+                    {previewsOne.map(preview =>
+                        <PreviewItem {...preview} />
+                    )}
+                </Row>
+
+                <Row md={{ span: 3, offset: 3 }}>
+                    {previewsTwo.map(preview =>
+                        <PreviewItem {...preview} />
+                    )}
+                </Row>
+            </Container>
         </>
     );
 }

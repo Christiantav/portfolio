@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../App.css'
 // import Sidebar from './Sidebar'
+import Button from 'react-bootstrap/Button'
 import Col from 'react-bootstrap/Col'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
@@ -18,7 +19,7 @@ function Header() {
 
     return (
         <>
-            <Navbar id="sidebar" className={visible} style={{ display: "inline-table" }} variant="light">
+            <Navbar id="sidebar" className={`${visible} header`} style={{ display: "inline-table" }} variant="light">
                 <Nav style={{ width: '20em' }}>
                     <Col>
                         <Navbar.Brand style={{ textAlign: 'center' }}>
@@ -28,8 +29,8 @@ function Header() {
                                 onClick={toggleSidebar}
                             />
                         </Navbar.Brand>
-                        <Nav.Item style={{ textAlign: 'center', marginTop: '15%' }}>
-                            <div>
+                        <Nav.Item>
+                            <div className="font">
                                 <b>About</b>
                                 <br />
                                 <br />
@@ -44,14 +45,21 @@ function Header() {
                 </Nav>
             </Navbar>
 
-            <Navbar bg="secondary" variant="light" className="header">
+            <Navbar variant="light" className="header" style={{ padding: `${sidebar ? '0' : ''}` }}>
                 <Navbar.Brand>
-                    <img
-                    src="/sandwich.png"
-                    width="4%"
-                    alt="React Bootstrap logo"
-                    onClick={toggleSidebar}
-                    />
+                    { sidebar ? (
+                        <Button style={{ backgroundColor: 'hsl(0, 0%, 98%)', borderColor: 'hsl(0, 0%, 98%)', padding: '0', marginLeft: '1em' }} onClick={toggleSidebar}>
+                            <div style={{ color: 'black', fontFamily: 'Montserrat', fontWeight: '500', fontSize: '2em' }}>x</div>
+                        </Button>
+                    ) : (
+                        <img
+                        src="/sandwich.png"
+                        width="4%"
+                        style= {{ opacity: `${sidebar ? '0' : ''}` }}
+                        alt="React Bootstrap logo"
+                        onClick={toggleSidebar}
+                        />
+                    )}
                 </Navbar.Brand>
             </Navbar>
         </>
