@@ -53,7 +53,7 @@ function Header() {
                         </Button>
                     ) : (
                         <img
-                        src="/sandwich.png"
+                        src="/portfolio/sandwich.png"
                         id="sandwich"
                         style= {{ opacity: `${sidebar ? '0' : ''}` }}
                         onClick={toggleSidebar}
