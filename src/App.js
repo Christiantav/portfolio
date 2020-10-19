@@ -12,7 +12,7 @@ function App() {
       <Header />
         <Router>
           <Switch>
-            <Route exact path="/portfolio/">
+            <Route path="/">
               <Landing/>
             </Route>
           </Switch>
