@@ -24,7 +24,7 @@ function Header() {
                     <Col>
                         <Navbar.Brand style={{ textAlign: 'center' }}>
                             <img
-                                src="/chrispic.png"
+                                src="/portfolio/chrispic.png"
                                 width="50%"
                                 onClick={toggleSidebar}
                             />
