@@ -7,16 +7,11 @@ import Navbar from 'react-bootstrap/Navbar'
 function Footer() {
   return (
     <div className="footer-text">
-      <Navbar bg="secondary" variant="light" fixed="bottom">
-          <Nav className="mr-auto">
-            <Col lg="auto">
-              <Nav.Link></Nav.Link>
-            </Col>
-          </Nav>
-          <Nav className="ml-auto">
-            <Col lg="auto">
-              <Nav.Link></Nav.Link>
-            </Col>
+      <Navbar bg="secondary" variant="light" fixed="bottom" style={{ justifyContent: "center" }}>
+          <Nav>
+            <Nav.Item className="font" id="footer" style={{ textAlign: "center" }}>
+              @ Christian Tavares 2020
+            </Nav.Item>
           </Nav>
       </Navbar>
     </div>

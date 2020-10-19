@@ -5,23 +5,21 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 
 const previewsOne = [
-    { preview: "Credibility Capital", path: "www.credibilitycapital.com", img: "credcap-icon.png", width: '18vw', border: '50%', rounded: true },
-    { preview: "Project Innovate Newark", path: "www.projectinnovatenewark.org", img: "pin-copy.png", width: '18vw', border: '50%', rounded: false },
-    { preview: "The Todo App", path: "/todo", img: "todo.png", width: '18vw', border: '50%', rounded: true },
+    { preview: "Credibility Capital", path: "http://www.credibilitycapital.com", img: "credcap-icon.png", border: '50%', rounded: true },
+    { preview: "Project Innovate Newark", path: "http://www.projectinnovatenewark.org", img: "pin-copy.png", border: '50%', rounded: false },
+    { preview: "The Todo App", path: "https://github.com/Christiantav/todo-app", img: "todo.png", border: '50%', rounded: true },
 ]
 
 const previewsTwo = [
-    { preview: "Blogger", path: "/blogger", img: "blogger.png", width: '18vw', border: '50%', rounded: true },
-    { preview: "Project Innovate Newark", path: "/pin", img: "pin-copy.png", width: '18vw', border: '50%', rounded: false },
-    // { preview: "CSX Program Teacher", path: "/csx", img: "csx.png", rounded: true },
-    // { preview: "Todo Application", path: "/todo", img: "todo.png", rounded: true },
+    { preview: "Blogger", path: "https://github.com/Christiantav/blogger", img: "blogger.png", border: '50%', rounded: true },
+    { preview: "Computer Science Program Teacher", path: "https://github.com/projectinnovatenewark/csx", img: "csx.png", border: '50%', rounded: false },
 ]
 
 function Landing() {
     return (
         <>
             <Container>
-                <div className="font" style={{ marginTop: '3em' }}>
+                <div className="font" id="title">
                     Software Development Portfolio of Christian Tavares
                 </div>
 

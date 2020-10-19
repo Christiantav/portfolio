@@ -3,12 +3,24 @@
   text-align: center;
 }
 
+#sandwich {
+  max-width: 1.4em;
+}
+
+#title {
+  font-size: 1.8em;
+  margin-bottom: 2em;
+}
+
+.img {
+  width: 18vw;
+}
+
 .img:hover {
   -moz-transition: all .2s ease-in;
   -o-transition: all .2s ease-in;
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
-  visibility: 'hidden';
   background-color: black; 
   padding: 90px;
 }
@@ -33,6 +45,10 @@
 
 .header {
   background-color: hsl(0, 0%, 98%) !important;
+}
+
+.col {
+  min-width: 150px;
 }
 
 #sidebar {
@@ -68,4 +84,35 @@
   right: 0;
   top: 0;
   z-index: 1;
+}
+
+/* Mobile Screen CSS  */
+
+@media only screen and (max-width: 500px) {
+  #sandwich {
+    max-width: 1.25em;
+  }
+  
+  #title {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    font-size: 1.2em;
+  }
+
+  #footer {
+    font-size: .8em;
+  }
+
+  .img {
+    width: 35vw;
+  }
+
+  .img:hover {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    background-color: white;
+    padding: 0px;
+  }
 }

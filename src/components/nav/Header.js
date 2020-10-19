@@ -36,7 +36,7 @@ function Header() {
                                 <br />
                                 <span>
                                     Full-Stack Software Engineer looking to implement and further my knowledge
-                                    in Web Development with a specific focus on delivering complex infrastructure
+                                    in Web Development with a focus on delivering complex infrastructure
                                     into a seamless experience for end-users.
                                 </span>
                             </div>
@@ -54,7 +54,7 @@ function Header() {
                     ) : (
                         <img
                         src="/sandwich.png"
-                        width="4%"
+                        id="sandwich"
                         style= {{ opacity: `${sidebar ? '0' : ''}` }}
                         alt="React Bootstrap logo"
                         onClick={toggleSidebar}
