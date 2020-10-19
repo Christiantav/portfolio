@@ -56,7 +56,6 @@ function Header() {
                         src="/sandwich.png"
                         id="sandwich"
                         style= {{ opacity: `${sidebar ? '0' : ''}` }}
-                        alt="React Bootstrap logo"
                         onClick={toggleSidebar}
                         />
                     )}
