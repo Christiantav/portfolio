@@ -43,7 +43,7 @@ function PreviewItem(props) {
                 <div style={{ marginTop: '3em', textAlign: 'center' }}>
                     <div
                         className="img-wrapper"
-                        onClick={() => setIsShown(toggleVal)}
+                        onMouseDown={() => setIsShown(toggleVal)}
                     >
                         <Fade in={isShown}>
                             { isShown ? (
